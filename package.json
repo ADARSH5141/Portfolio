@@ -2,7 +2,7 @@
   "name": "muzafer-portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://muzafer26.github.io/Portfolio/",
+  "homepage": "https://adarsh5141.github.io/Portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
