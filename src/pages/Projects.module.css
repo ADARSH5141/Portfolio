@@ -1,0 +1,43 @@
+.header {
+  padding: 100px 5vw 48px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--accent-purple);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -1.5px;
+  margin-bottom: 12px;
+}
+
+.sub {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 520px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 0 5vw 80px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .header { padding-top: 88px; }
+}

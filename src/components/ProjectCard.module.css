@@ -1,0 +1,109 @@
+.card {
+  background: var(--bg-secondary);
+  border-radius: 14px;
+  border: 0.5px solid var(--border-subtle);
+  overflow: hidden;
+  text-decoration: none;
+  display: block;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-hover);
+}
+
+.mockup {
+  height: 160px;
+  background: var(--bg-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 0.5px solid var(--border-subtle);
+}
+
+.browser {
+  width: 80%;
+  background: #0d0d0d;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+  overflow: hidden;
+}
+
+.bar {
+  height: 24px;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  gap: 6px;
+  border-bottom: 0.5px solid var(--border-subtle);
+}
+
+.dots { display: flex; gap: 4px; }
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+.red { background: #FF5F57; }
+.yellow { background: #FFBD2E; }
+.green { background: #28CA41; }
+
+.urlBar {
+  flex: 1;
+  height: 13px;
+  background: var(--bg-primary);
+  border-radius: 3px;
+  border: 0.5px solid var(--border-subtle);
+  margin: 0 4px;
+}
+
+.body {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.line {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--border-subtle);
+}
+.purple { background: rgba(123, 97, 255, 0.35); }
+.purpleLight { background: rgba(123, 97, 255, 0.18); }
+
+.info {
+  padding: 20px;
+}
+
+.num {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent-purple);
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+
+.name {
+  font-family: 'Syne', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  letter-spacing: -0.3px;
+}
+
+.desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.link {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent-purple);
+}

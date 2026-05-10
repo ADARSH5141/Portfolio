@@ -1,0 +1,214 @@
+.hero {
+  padding: 100px 5vw 80px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 48px;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.heroContent {}
+
+.greeting {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--accent-light);
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(42px, 6vw, 72px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -2px;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+.title span { color: var(--accent-purple); }
+
+.subtitle {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  max-width: 480px;
+  margin-bottom: 36px;
+}
+
+.ctas {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  background: var(--accent-purple);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+.btnPrimary:hover { background: #6B50EF; }
+.btnPrimary:active { transform: scale(0.98); }
+
+.btnGhost {
+  background: transparent;
+  color: var(--text-primary);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid var(--border-hover);
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, transform 0.1s;
+}
+.btnGhost:hover {
+  background: var(--bg-tertiary);
+  border-color: rgba(255,255,255,0.25);
+}
+.btnGhost:active { transform: scale(0.98); }
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Syne', sans-serif;
+  font-size: 52px;
+  font-weight: 800;
+  color: var(--accent-purple);
+  letter-spacing: -2px;
+  flex-shrink: 0;
+}
+
+.divider {
+  height: 0.5px;
+  background: var(--border-subtle);
+  max-width: 1100px;
+  margin: 0 5vw;
+}
+
+.section {
+  padding: 72px 5vw;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sectionLabel {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--accent-purple);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.sectionTitle {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  letter-spacing: -1px;
+}
+
+.sectionSub {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Skills */
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.skillCat {
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 20px;
+  border: 0.5px solid var(--border-subtle);
+}
+
+.catName {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 14px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.tag {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--accent-light);
+  background: rgba(123, 97, 255, 0.1);
+  border: 1px solid rgba(123, 97, 255, 0.25);
+  border-radius: 20px;
+  padding: 4px 12px;
+}
+
+/* Story */
+.storyBlock {
+  background: var(--bg-secondary);
+  border-radius: 16px;
+  border: 0.5px solid var(--border-subtle);
+  padding: 40px 48px;
+  max-width: 760px;
+}
+
+.storyBlock p {
+  font-size: 17px;
+  line-height: 1.85;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+.storyBlock p:last-child { margin-bottom: 0; }
+.storyBlock em {
+  color: var(--text-primary);
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 80px;
+    gap: 32px;
+  }
+  .avatar {
+    width: 100px;
+    height: 100px;
+    font-size: 28px;
+    order: -1;
+  }
+  .storyBlock { padding: 24px 20px; }
+  .title { letter-spacing: -1px; }
+}
